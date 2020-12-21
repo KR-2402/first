@@ -6,9 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $("#login-form").submit(function () {
+        var enteredName = $("#name2").val();
+        var enteredPass = $("#pass2").val();
 
+        var storedName = localStorage.getItem("n1");
+        var storedPass = localStorage.getItem("p1");
+
+        
+      });
+
+</script>
 <div class="topnav">
-  <a href="#">Welcome USER!</a>
+  <a href="#">Welcome </a>
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
@@ -16,6 +28,50 @@
     </form>
   </div>
 </div>
+<body>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>MEDICAL SUMMARY</h2>
+        <h5>Dec 21,2020  4:30pm</h5>
+        <p>Hospital Name: AIIMS
+        <br>
+        Doctor: Dr.Mathew Philip
+        <br>
+        Department: Gynaecology
+        <br>
+        <div class="fakeimg" style="height:200px;">Description</div>
+        </p>
+      </div>
+      <div class="card">
+        <h2>MEDICAL SUMMARY</h2>
+        <h5>Dec 21,2020  4:30pm</h5>
+        <p>Hospital Name: AIIMS
+        <br>
+        Doctor: Dr.Mathew Philip
+        <br>
+        Department: Gynaecology
+        <br>
+        <div class="fakeimg" style="height:200px;">Description</div>
+        </p>
+      </div>
+      <div class="card">
+        <h2>MEDICAL SUMMARY</h2>
+        <h5>Dec 21,2020  4:30pm</h5>
+        <p>Hospital Name: AIIMS
+        <br>
+        Doctor: Dr.Mathew Philip
+        <br>
+        Department: Gynaecology
+        <br>
+        <div class="fakeimg" style="height:200px;">Description</div>
+        </p>
+      </div>
+    </div>
+  
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
 
 </body>
 </html>
