@@ -1,1 +1,52 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          background-image: url('new.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style3.css">
+<div class="container">
+    <h1>Add new details to medical summary</h1>
+    
+    <hr>
+    <label for="date"><b>Date</b></label>
+    <input type="text" placeholder="Enter Date" name="date" required>
+
+    <label for="time"><b>Time</b></label>
+    <input type="text" placeholder="Enter Time" name="time" required>
+    
+    <label for="hospital"><b>Hospital Name</b></label>
+    <input type="text" placeholder="Enter Hospital Name" name="hospital" required>
+    
+    <label for="speciality"><b>Speciality</b></label>
+    <input type="text" placeholder="Enter Speciality" name="speciality" required>
+    <br>
+    <b>Diagnosis/Test Reports :</b>
+    <br>
+    <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        
+    </form>
+   <b>Prescription :</b>
+   <br>
+    <form action="/action_page.php">
+   <input type="file" id="myFile" name="filename">
+  
+    </form>
+    
+    
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+</head>
+<body>
