@@ -1,35 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style2.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style22.css">
+    <title>User</title>
 </head>
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $("#login-form").submit(function () {
-        var enteredName = $("#name2").val();
-        var enteredPass = $("#pass2").val();
+<div class="navbar">
 
-        var storedName = localStorage.getItem("n1");
-        var storedPass = localStorage.getItem("p1");
-
-        
-      });
-
-</script>
-<div class="topnav">
-  <a href="#">Welcome </a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+<a href="#">Settings</a>
+<a href="#">Search</a>
 </div>
-<body>
-  <div class="row">
+<div class="row">
     <div class="leftcolumn">
       <div class="card">
         <h2>MEDICAL SUMMARY</h2>
@@ -40,6 +23,17 @@
         <br>
         Department: Gynaecology
         <br>
+        Diagnosis/Test:
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            
+          </form>
+          Prescription:
+          <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            
+          </form>
+          <br>
         <div class="fakeimg" style="height:200px;">Description</div>
         </p>
       </div>
