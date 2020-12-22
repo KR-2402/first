@@ -8,21 +8,46 @@
 </head>
 <body>
   
-    <ul>
+     <ul>
       
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">SETTINGS</a>
         <div class="dropdown-content">
-          <a href="#">Hospital Login</a>
-               <a href="#">Emergency File</a>
+          <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Hospital Login</a>
+          
+          <div id="id01" class="modal">
+  
+            <!-- Modal content
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+           --> <div class="modal-content">
+            <div class="modal-header">
+              
+              <h4 class="modal-title"><b>Admin Login History</b></h4>
+            </div>
+            <div class="modal-body">
+              <p>Date:12-03-2017<br>Time: 5:48pm<br>Hospital Name : Aster Medicity, Wayanad<br><br>Date:6-11-2016<br>Time: 2:09am<br>Hospital Name : Rajagiri Hospital, Klamassery<br><br>Date:19-06-2012<br>Time: 1:32pm<br>Hospital Name : Annai Hospital, Chennai<br><br>Date:13-02-2010<br>Time: 11:57pm<br>Hospital Name : Vellore Medical College,Vellore<br>
+      
+              </p>
+            </div>
+            
+          </div>
+          </div>
+          <a href="#">Emergency Files</a>
                <a href="#">Transfer File</a>
               <a href="index.html">Log Out</a>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          
+          
+        </div>
         </div>
       </li>
       <li id="Welcome"><a href="#home">WELCOME USER</a></li>
       <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
     </ul>
-  
   
 
 <div class="row">
