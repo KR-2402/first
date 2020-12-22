@@ -1,4 +1,48 @@
 * {box-sizing: border-box;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  text-align: center;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 5px solid rgb(139, 129, 129);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) 
+.close {
+  position: absolute;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: green;
+  cursor: pointer;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+*/
 
 body {
   margin: 0;
@@ -15,6 +59,7 @@ body {
     font-size: 20px;
     padding: 11px;
     border: 1px solid #ddd;
+    background-color: white;
     
   }
   #Welcome
@@ -26,7 +71,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(209, 209, 209);
+  background-color: white;
 }
 
 
@@ -37,22 +82,23 @@ li a, .dropbtn {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: white;
+  
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #cab7b7;
+  background-color: #f1f1f1;;
 }
 
 li.dropdown {
   display: inline-block;
-
 
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -74,16 +120,18 @@ li.dropdown {
 .footer {
     padding: 2px;
     text-align: center;
-    background:#e9e9e9;
-    
+    background-color:white;
+    position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;
+      
   }
   .footer> h3>a{
  text-decoration: none;
   }
   .card {
     margin: 50px;
-    background-color:#e9e9e9;
+    background-color: white;
     padding: 10px;
     border: 7px solid  rgb(139, 129, 129);
   border-radius: 5px;
+  
 }
