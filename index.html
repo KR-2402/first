@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-          background-image: url('new.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: 100% 100%;
-        }
-        </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<title>Vital Essence</title>
 </head>
 <body>
-<div class="imgcontainer">
-    <img src="icon.jpeg" alt="Avatar" class="avatar">
-    <p><b>Vital Essence</b></p>
+
+  <div class="imgcontainer">
+    <div class="slider"></div>
   </div>
 
   <div class="container">
-    <div>
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+  <div class="main-head">
+    <h1><b>Vital Essence</b></h1>
   </div>
-  <div>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-  </div> 
-  
-    <button type="login"><a href="page2.html">Login</a></button>
-  
-    <button type="signup"><a href="page3.html">Sign Up</a></button>
-  
+    <form id="login-form">
+      <label for="uname"><b>Username</b></label>
+      <br>
+      <input id="name1" type="text" placeholder="Enter Username" value="" required>
+      <br>
+      <label for="psw"><b>Password</b></label>    
+      <br>
+      <input id="pass1" type="password" placeholder="Enter Password" value="" required>      
+      <br>
+      <button id="login_btn" class="btn-grad" type="submit" value="Login"><a href="page2.html">Login</a></button>
+      <br>
+      <div class="or">Or start a new journey with us</div>
+    <button id="signup-btn" class="btn-grad" type="signup" ><a href="page3.html">Sign Up</a></button>
+    </form>
   </div>
- </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#login-form").submit(function () {
+        var nm1 = $("#name1").val();
+        var ps1 = $("#pass1").val();
+        localStorage.setItem("n1", nm1);
+        localStorage.setItem("p1", ps1);
+
+      });
+      });
+</script>
 </body>
 </html>
