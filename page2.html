@@ -8,10 +8,11 @@
 </head>
 <body>
 <div class="navbar">
-
 <a href="#">Settings</a>
-<a href="#">Search</a>
+<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<a href="#">Welcome user</a>
 </div>
+
 <div class="row">
     <div class="leftcolumn">
       <div class="card">
@@ -33,8 +34,28 @@
             <input type="file" id="myFile" name="filename">
             
           </form>
-          <br>
-        <div class="fakeimg" style="height:200px;">Description</div>
+    
+          </p>
+      </div>
+      <div class="card">
+        <h2>MEDICAL SUMMARY</h2>
+        <h5>Dec 21,2020  4:30pm</h5>
+        <p>Hospital Name: AIIMS
+        <br>
+        Doctor: Dr.Mathew Philip
+        <br>
+        Department: Gynaecology
+        <br>
+        Diagnosis/Test:
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            
+          </form>
+          Prescription:
+          <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            
+          </form>
         </p>
       </div>
       <div class="card">
@@ -46,25 +67,22 @@
         <br>
         Department: Gynaecology
         <br>
-        <div class="fakeimg" style="height:200px;">Description</div>
-        </p>
-      </div>
-      <div class="card">
-        <h2>MEDICAL SUMMARY</h2>
-        <h5>Dec 21,2020  4:30pm</h5>
-        <p>Hospital Name: AIIMS
-        <br>
-        Doctor: Dr.Mathew Philip
-        <br>
-        Department: Gynaecology
-        <br>
-        <div class="fakeimg" style="height:200px;">Description</div>
+        Diagnosis/Test:
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            
+          </form>
+          Prescription:
+          <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            
+          </form>
         </p>
       </div>
     </div>
   
   <div class="footer">
-    <h2>Footer</h2>
+    <h3>ADD MORE<a href="#">  +</a></h3>
   </div>
 
 </body>
