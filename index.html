@@ -19,20 +19,26 @@
   </div>
 
   <div class="container">
-    <div>
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <form id="login-form">
+      <label for="uname"><b>Username</b></label>
+    <input id="name1" type="text" placeholder="Username" value="" required>
+    <label for="psw"><b>Password</b></label>    
+    <input id="pass1" type="password" placeholder="Password" value="" required>      
+    <button id="login_btn" type="submit" value="Login"><a href="page22.html">Login</a></button>
+    <button type="signup" ><a href="page3.html">Sign Up</a></button>
+    </form>
   </div>
-  <div>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-  </div> 
-  
-    <button type="login"><a href="page2.html">Login</a></button>
-  
-    <button type="signup"><a href="page3.html">Sign Up</a></button>
-  
-  </div>
- </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#login-form").submit(function () {
+        var nm1 = $("#name1").val();
+        var ps1 = $("#pass1").val();
+        localStorage.setItem("n1", nm1);
+        localStorage.setItem("p1", ps1);
+
+      });
+      });
+</script>
 </body>
 </html>
