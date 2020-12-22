@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 body 
 {
@@ -156,3 +157,9 @@ input[type=text], input[type=password] {
 }
 
 @media */
+
+body
+{
+padding:0;
+}
+

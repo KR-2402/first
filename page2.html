@@ -7,11 +7,49 @@
     <title>User</title>
 </head>
 <body>
-<div class="navbar">
+  
+     <ul>
+      
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SETTINGS</a>
+        <div class="dropdown-content">
+          <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Hospital Login</a>
+          
+          <div id="id01" class="modal">
+  
+            <!-- Modal content
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+           --> <div class="modal-content">
+            <div class="modal-header">
+              
+              <h4 class="modal-title"><b>Admin Login History</b></h4>
+            </div>
+            <div class="modal-body">
+              <p>Date:12-03-2017<br>Time: 5:48pm<br>Hospital Name : Aster Medicity, Wayanad<br><br>Date:6-11-2016<br>Time: 2:09am<br>Hospital Name : Rajagiri Hospital, Klamassery<br><br>Date:19-06-2012<br>Time: 1:32pm<br>Hospital Name : Annai Hospital, Chennai<br><br>Date:13-02-2010<br>Time: 11:57pm<br>Hospital Name : Vellore Medical College,Vellore<br>
+      
+              </p>
+            </div>
+            
+          </div>
+          </div>
+          <a href="#">Emergency Files</a>
+               <a href="#">Transfer File</a>
+              <a href="index.html">Log Out</a>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          
+          
+        </div>
+        </div>
+      </li>
+      <li id="Welcome"><a href="#home">WELCOME USER</a></li>
+      <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
+    </ul>
+  
 
-<a href="#">Settings</a>
-<a href="#">Search</a>
-</div>
 <div class="row">
     <div class="leftcolumn">
       <div class="card">
@@ -24,17 +62,28 @@
         Department: Gynaecology
         <br>
         Diagnosis/Test:
-        <form action="/action_page.php">
-            <input type="file" id="myFile" name="filename">
-            
-          </form>
+        <p height="100px"></p>
+        <br>
           Prescription:
-          <form action="/action_page.php">
-            <input type="file" id="myFile" name="filename">
-            
-          </form>
+          <p height="100px"></p>
           <br>
-        <div class="fakeimg" style="height:200px;">Description</div>
+          </p>
+      </div>
+      <div class="card">
+        <h2>MEDICAL SUMMARY</h2>
+        <h5>Dec 21,2020  4:30pm</h5>
+        <p>Hospital Name: AIIMS
+        <br>
+        Doctor: Dr.Mathew Philip
+        <br>
+        Department: Gynaecology
+        <br>
+        Diagnosis/Test:
+        <p height="100px"></p>
+        <br>
+          Prescription:
+          <p height="100px"></p>
+          <br>
         </p>
       </div>
       <div class="card">
@@ -46,25 +95,17 @@
         <br>
         Department: Gynaecology
         <br>
-        <div class="fakeimg" style="height:200px;">Description</div>
-        </p>
-      </div>
-      <div class="card">
-        <h2>MEDICAL SUMMARY</h2>
-        <h5>Dec 21,2020  4:30pm</h5>
-        <p>Hospital Name: AIIMS
+        Diagnosis/Test:
+        <p height="100px"></p>
         <br>
-        Doctor: Dr.Mathew Philip
-        <br>
-        Department: Gynaecology
-        <br>
-        <div class="fakeimg" style="height:200px;">Description</div>
-        </p>
+          Prescription:
+          <p height="100px"></p>
+          <br>
       </div>
     </div>
   
   <div class="footer">
-    <h2>Footer</h2>
+    <h3>ADD MORE<a href="record.html">  +</a></h3>
   </div>
 
 </body>
