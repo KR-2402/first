@@ -31,7 +31,7 @@ body
   padding-top: 25px;
   background-color: white;
   border-radius: 150px;
-  animation: slide 24s infinite;
+  animation: slide 15s infinite;
 }
 @keyframes slide{
   20%{
