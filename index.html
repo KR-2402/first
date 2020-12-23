@@ -18,30 +18,26 @@
       <form id="login-form">
         <label for="uname"><b>Username</b></label>
         <br>
-        <input id="name1" type="text" placeholder="Enter Username" value="" required>
+        <input id="name1" type="text" placeholder="Enter Username" class="name1">
         <br>
         <label for="psw"><b>Password</b></label>    
         <br>
         <input id="pass1" type="password" placeholder="Enter Password" value="" required>      
         <br>
-        <button id="login_btn" class="btn-grad" type="submit" value="Login"><a href="page2.html">Login</a></button>
+        <button onclick="mylocal()" class="btn-grad" type="submit" value="Login"><a href="page2.html">Login</a></button>
         <br>
         <div class="or">Or start a new journey with us</div>
         <button id="signup-btn" class="btn-grad" type="signup" ><a href="page3.html">Sign Up</a></button>
       </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () 
-      {
-        $("#login-form").submit(function () 
-        {
-          var nm1 = $("#name1").val();
-          var ps1 = $("#pass1").val();
-          localStorage.setItem("n1", nm1);
-          localStorage.setItem("p1", ps1);
-        });
-      });
-    </script>
+   <script>
+   function mylocal(){
+             var getValue = $('#name1').val();
+            console.log(getValue)
+            localStorage.setItem("key",getValue)
+        }
+
+</script>
   </body>
 </html>
