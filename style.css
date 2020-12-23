@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');  /*Poppins font from google fonts*/
+
 body 
 {
   font-family: 'Poppins', sans-serif;
@@ -8,19 +9,26 @@ body
 	animation: gradient 10s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
+/* Background animation */
+@keyframes gradient 
+{
+  0% 
+  {
 		background-position: 0% 50%;
 	}
-	50% {
+  50% 
+  {
 		background-position: 100% 50%;
 	}
-	100% {
+  100% 
+  {
 		background-position: 0% 50%;
 	}
 }
 
-.imgcontainer .slider {
+/* Hospital Icon */
+.imgcontainer .slider 
+{
   margin: 0 auto;
   width: 128px;
   height: 128px;
@@ -31,52 +39,64 @@ body
   padding-top: 25px;
   background-color: white;
   border-radius: 150px;
-  animation: slide 15s infinite;
+  animation: slide 25s ease-in-out infinite;
 }
-@keyframes slide{
-  20%{
+
+/* Hospital Icons Animation  */
+@keyframes slide
+{
+  20%
+  {
     background-image: url(hospital-icons/2.png);
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  40%{
+  40%
+  {
     background-image: url(hospital-icons/3.png);
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   50%{
     background-image: url(hospital-icons/4.png);
   background-position: center;
   background-repeat: no-repeat;
   }
-  60%{
+  60%
+  {
     background-image: url(hospital-icons/5.png);
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  70%{
+  70%
+  {
     background-image: url(hospital-icons/6.png);
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  80%{
+  80%
+  {
     background-image: url(hospital-icons/7.png);
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  90%{
+  90%
+  {
     background-image: url(hospital-icons/8.png);
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  100%{
+  100%
+  {
     background-image: url(hospital-icons/1.png);
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
-.container{
+/* Box containing the form */
+.container
+{
   background-color: rgba(255,255,255,0.2);
   border-radius: 20px;
   margin-top: 10px;
@@ -84,28 +104,26 @@ body
   margin-right: 35%;
   padding-bottom: 3%;
 }
-@media only screen and (max-width:700px)
-{
-  .container{
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
   
- .main-head{
+/* "Vital Essence" heading */
+.main-head
+{
   padding-top: 10px;
   text-align: center;
   color: white;
   font-size: 1.1em;
- }
+}
 
-/* Full-width input fields */
-#login-form{
+/* Login Form */
+#login-form
+{
   width: 80%;
   margin: 0 20px;
   font-size: 17px;
 }
-input[type=text], input[type=password] {
+/* input field features */
+input[type=text], input[type=password] 
+{
   border: 1px solid #ccc;
   width: 100%;
   margin: 0 30% 0 4%;
@@ -116,12 +134,14 @@ input[type=text], input[type=password] {
   border-radius: 10px;
   box-sizing: border-box;
 }
-
-/* Set a style for all buttons */
-.btn-grad {background-image: linear-gradient(to right, #5e13a3 0%, #26D0CE  51%, #1A2980  100%)}
-.btn-grad {
-  margin: 10px;
-  margin-left: 35%;
+/* Button style */
+.btn-grad 
+{
+  background-image: linear-gradient(to right, #5e13a3 0%, #26D0CE  51%, #1A2980  100%)
+}
+.btn-grad 
+{
+  margin: 10px auto;
   padding: 15px 55px;
   text-transform: uppercase;
   transition: 0.7s;
@@ -130,8 +150,26 @@ input[type=text], input[type=password] {
   display: block;
   border-radius: 40px;
 }
+/* Button animation while hovering */
+.btn-grad:hover 
+{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/* Button text's style */
+.btn-grad a
+{
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
 
-.or{
+/* Styling the line 'Or start a new journey with us' */
+.or
+{
   color: white;
   text-align: center;
   font-weight: 400;
@@ -140,33 +178,24 @@ input[type=text], input[type=password] {
   margin-left: 40px;
 }
 
-#signup-btn{
-  margin-left: 34%;
-}
-
-@media only screen and (max-width:480px)
+/* For mobile screens */
+@media only screen and (max-width:700px)
 {
-  .btn-grad {
-    margin-left: 25%;
+  .container
+  {
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .or{
+  .btn-grad 
+  {
+    margin-left: auto;
+  }
+  .or
+  {
     margin-left: 8px;
   }
-  #signup-btn{
-    margin-left: 25%;
-  }
 }
 
-.btn-grad a{
-  text-decoration: none;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  font-size: 18px;
-}
 
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
+
+
