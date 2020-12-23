@@ -4,65 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <title>User</title>
 </head>
 <body>
   
     <ul>
-      
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">SETTINGS</a>
-        <div class="dropdown-content">
-          <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Hospital Login</a>
-          
-          <div id="id01" class="modal">
-  
-            <!-- Modal content
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-           --> <div class="modal-content">
-            <div class="modal-header">
-              
-              <h4 class="modal-title"><b>Admin Login History</b></h4>
-            </div>
-            <div class="modal-body">
-              <p>Date:12-03-2017<br>Time: 5:48pm<br>Hospital Name : Aster Medicity, Wayanad<br><br>Date:6-11-2016<br>Time: 2:09am<br>Hospital Name : Rajagiri Hospital, Klamassery<br><br>Date:19-06-2012<br>Time: 1:32pm<br>Hospital Name : Annai Hospital, Chennai<br><br>Date:13-02-2010<br>Time: 11:57pm<br>Hospital Name : Vellore Medical College,Vellore<br>
-      
-              </p>
-            </div>
-            
+      <div class="menu">
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn anime">Settings <i class="fas fa-cog"></i> </a>
+          <div class="dropdown-content">
+            <a href="#">Hospital Login</a>
+            <a href="#">Emergency File</a>
+            <a href="#">Transfer File</a>
+            <a href="index.html">Log Out</a>
           </div>
-          </div>
-          <a href="#">Emergency Files</a>
-               <a href="#">Transfer File</a>
-              <a href="index.html">Log Out</a>
-        </div>
+        </li>
+        <li class="anime" id="Welcome"><a href="#home"><i class="far fa-user"></i> Welcome User</a></li>
       </div>
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
-          
-          
-        </div>
-        </div>
-      </li>
-      <li id="Welcome"><a href="#home">WELCOME USER</a></li>
-      <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
+        <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
     </ul>
   
-    
+  
+    <h2>MEDICAL SUMMARY</h2>
 
 <div class="row">
     <div class="leftcolumn">
       <div class="card">
-        <h2>MEDICAL SUMMARY</h2>
+        
         <h5>Dec 21,2020  4:30pm</h5>
         <p>Hospital Name: AIIMS
         <br>
         Doctor: Dr.Mathew Philip
         <br>
-        Department: Gynaecology
+        Speciality: Gynaecology
         <br>
         Diagnosis/Test:
         <p height="100px"></p>
@@ -73,13 +48,12 @@
           </p>
       </div>
       <div class="card">
-        <h2>MEDICAL SUMMARY</h2>
         <h5>Dec 21,2020  4:30pm</h5>
         <p>Hospital Name: AIIMS
         <br>
         Doctor: Dr.Mathew Philip
         <br>
-        Department: Gynaecology
+        Speciality: Gynaecology
         <br>
         Diagnosis/Test:
         <p height="100px"></p>
@@ -90,13 +64,12 @@
         </p>
       </div>
       <div class="card">
-        <h2>MEDICAL SUMMARY</h2>
         <h5>Dec 21,2020  4:30pm</h5>
         <p>Hospital Name: AIIMS
         <br>
         Doctor: Dr.Mathew Philip
         <br>
-        Department: Gynaecology
+        Speciality: Gynaecology
         <br>
         Diagnosis/Test:
         <p height="100px"></p>
@@ -106,21 +79,7 @@
           <br>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <h3>ADD MORE<a href="record.html">  +</a></h3>
-  </div>
+  
 
-  <script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
 </body>
 </html>
