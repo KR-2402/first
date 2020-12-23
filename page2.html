@@ -8,22 +8,31 @@
     <title>User</title>
 </head>
 <body>
-  
-    <ul>
-      <div class="menu">
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn anime">Settings <i class="fas fa-cog"></i> </a>
-          <div class="dropdown-content">
-            <a href="#">Hospital Login</a>
-            <a href="#">Emergency File</a>
-            <a href="#">Transfer File</a>
-            <a href="index.html">Log Out</a>
+  <ul>
+    <div class="menu">
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn anime">Settings <i class="fas fa-cog"></i> </a>
+        <div class="dropdown-content">
+          <a data-modal-target="#modal" href="#">Hospital Login</a>
+          <div class="modal active" id="modal">
+            <div class="modal-header">
+              <div class="title"><b>Admin Login History</b></div>
+              <button data-close-button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>Date:12-03-2017<br>Time: 5:48pm<br>Hospital Name : Aster Medicity, Wayanad<br><br>Date:6-11-2016<br>Time: 2:09am<br>Hospital Name : Rajagiri Hospital, Kalamassery<br><br>Date:19-06-2012<br>Time: 1:32pm<br>Hospital Name : Annai Hospital, Chennai<br><br>Date:13-02-2010<br>Time: 11:57pm<br>Hospital Name : Vellore Medical College,Vellore<br> </p>
+            </div>
           </div>
-        </li>
-        <li class="anime" id="Welcome"><a href="#home"><i class="far fa-user"></i> Welcome User</a></li>
-      </div>
-        <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
-    </ul>
+          <div class="active" id="overlay"></div>
+          <a href="#">Emergency File</a>
+          <a href="#">Transfer File</a>
+          <a href="index.html">Log Out</a>
+        </div>
+      </li>
+      <li class="anime" id="Welcome"><a href="#home"><i class="far fa-user"></i>id="name1"</a></li>
+    </div>
+      <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
+  </ul>
   
   
     <h2>MEDICAL SUMMARY</h2>
@@ -80,6 +89,47 @@
       </div>
     </div>
   
+  <script>
+    var myname = localStorage.getItem("key")
+    document.getElementById("name1").innerHTML = "Welcome "+myname;
+
+    const openModalButton = document.querySelectorAll('[data-modal-target]');
+    const closeModalButton = document.querySelectorAll('[data-close-button]');
+    const overlay = document.getElementById('overlay');
+    
+    openModalButton.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget)
+        openModal(modal)
+      })
+    })
+    
+    closeModalButton.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal')
+        closeModal(modal)
+      })
+    })
+
+    overlay.addEventListener('click', () => {
+      const modals = document.querySelectorAll('.modal.active')
+      modals.forEach(modal => {
+        closeModal(modal)
+      })
+    })
+
+    function openModal(modal) {
+      if (modal==null) return
+      modal.classList.add('active')
+      overlay.classList.add('active')
+    }
+
+    function closeModal(modal) {
+      if (modal==null) return
+      modal.classList.remove('active')
+      overlay.classList.remove('active')
+    }
+    </script>
 
 </body>
 </html>
