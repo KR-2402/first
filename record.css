@@ -1,5 +1,6 @@
 /* Mobile-first responsive */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 * 
 {
@@ -129,16 +130,30 @@ input#myFile + label:hover
   text-decoration: none;
 }
 
+@media only screen and (max-width:900px)
+{
+  .gif
+  {
+    display: none;
+  }
+}
 @media only screen and (min-width:900px)
 {
     .container 
     {
         margin-bottom: 16px;
     }
-    /* .gif
+    .form-container
     {
-        background-image: url(https://www.pinterest.com/pin/10203536643605336/);
-    } */
+      margin-top: -35%;
+    }
+    .gif video
+    {
+      position: relative;
+      margin-top: 10%;
+      left: 63%;
+      border-radius: 20px;
+    } 
     .container h1
     {
         text-align: left;
@@ -168,5 +183,11 @@ input#myFile + label:hover
     input#myFile + label
     {
         border-radius: 10px;
+    }
+    .btn-grad 
+    {
+      margin-left: auto;
+      font-family: 'Acme', sans-serif;
+      font-size: 25px;
     }
 }
