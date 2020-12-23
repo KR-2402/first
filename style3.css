@@ -93,8 +93,39 @@ body
     color: blue;
 }
 }
-.btn-grad {background-image: linear-gradient(to right, #5e13a3 0%, #26D0CE  51%, #1A2980  100%)}
-.btn-grad {
+/* Button style */
+.btn-grad 
+{
+  background-image: linear-gradient(to right, #5e13a3 0%, #26D0CE  51%, #1A2980  100%)
+}
+.btn-grad 
+{
+  margin: 10px auto;
+  padding: 15px 55px;
+  text-transform: uppercase;
+  transition: 0.7s;
+  background-size: 200% auto;            
+  border-style: none;
+  display: block;
+  border-radius: 40px;
+}
+/* Button animation while hovering */
+.btn-grad:hover 
+{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/* Button text's style */
+.btn-grad a
+{
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
 @keyframes gradient 
 {
   0% 
@@ -166,7 +197,7 @@ input[type=text]:focus, input[type=password]:focus
 
 .container .policy a
 {
-  color:#5e13a3;
+  color:white;
 }
 
 @media only screen and (min-width:900px)
