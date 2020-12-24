@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up !!!</title>
     <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="main-container">
@@ -21,7 +22,7 @@
         <div class="box">
           
           <label for="name"><b>Name</b></label>
-          <input type="text" placeholder="Enter Name" name="name" required>
+          <input id="name1" type="text" placeholder="Enter Name" name="name" required>
           
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
@@ -40,12 +41,20 @@
           
         </div>
         
-        <p class="policy">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-        
-        <button type="submit" class="btn-grad signupbtn">Submit</button>
+        <p class="policy">By creating an account you agree to our <a href="construction.html">Terms & Privacy</a>.</p>
+        <a href="welcome.html" class="btn">
+          <button onclick=mylocal()  type="submit" class="btn-grad signupbtn">Sign Up</button>
+        </a>
 
       </div>
     </div>
-    
+    <script>
+      function mylocal(){
+                var getValue = $('#name1').val();
+               console.log(getValue)
+               localStorage.setItem("key",getValue)
+           }
+   
+   </script>
   </body>
 </html>
