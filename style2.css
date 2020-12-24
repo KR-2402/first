@@ -224,6 +224,41 @@ h2{
   font-size: 1.5em;
 }
 
+.btn-grad 
+{
+  background-image: linear-gradient(to right, #0c0e9c 0%, #09b3b0  51%, lime  100%)
+}
+.btn-grad 
+{
+
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+  padding: 35px 35px;
+  transition: 0.7s;
+  background-size: 200% auto;            
+  border-style: none;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.btn-grad:hover 
+{
+
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+}
+
+.blood-test:hover{
+  color: red;
+}
+.scan:hover{
+  color: rgb(88, 6, 136);
+}
+.med:hover{
+  color: rgb(219, 7, 113);
+}
+
 @media only screen and (min-width:900px)
 {
   .card {
