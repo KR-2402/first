@@ -10,8 +10,10 @@
 <body>
   <ul>
     <div class="menu">
+      <li class="anime" id="Welcome"></i><a href="#home" id="name1" ></a></li>
       <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn anime">Settings <i class="fas fa-cog"></i> </a>
+        <!-- Settings or Hamburger -->
+        <a href="javascript:void(0)" class="dropbtn anime"><i class="fas fa-bars"></i> </a>
         <div class="dropdown-content">
           <a data-modal-target="#modal" href="#">Hospital Login</a>
           <div class="modal active" id="modal">
@@ -24,12 +26,11 @@
             </div>
           </div>
           <div class="active" id="overlay"></div>
-          <a href="#">Emergency File</a>
+          <a href="page4.html">Emergency File</a>
           <a href="#">Transfer File</a>
           <a href="index.html">Log Out</a>
         </div>
       </li>
-      <li class="anime" id="Welcome"><a href="#home" id="name1"><i class="far fa-user"></i></a></li>
     </div>
       <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
   </ul>
@@ -128,7 +129,8 @@
       overlay.classList.remove('active')
     }
       var myname = localStorage.getItem("key")
-    document.getElementById("name1").innerHTML = "Welcome "+myname;
+    document.getElementById("name1").innerHTML = '<i class="far fa-user"></i>'+" Welcome "+myname;
+    // document.getElementById("name1").appendChild();
     </script>
 
 </body>
