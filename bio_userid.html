@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="bio_userid.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <title>Vital Essence</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
       </div>
     <div class="container">
         <div class="main-head">
-          <h1><b>HOSPITAL LOGIN</b></h1>
+          <h1 id="name1"></h1>
         </div>
         <form id="login-form">
           <button id="login_btn" class="btn-grad" type="submit" value="Login"><a href="emergency.html">Biometric Scan</a></button>
@@ -30,5 +31,10 @@
         </form>
         <br>
       </div>
+      <script>
+      var myname = localStorage.getItem("key")
+    document.getElementById("name1").innerHTML = '<i class="fas fa-hospital-user"></i>'+" Welcome "+myname;
+
+    </script>
 </body>
 </html>
