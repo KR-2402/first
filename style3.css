@@ -93,6 +93,9 @@ body
     color: blue;
 }
 }
+.btn{
+  text-decoration: none;
+}
 /* Button style */
 .btn-grad 
 {
