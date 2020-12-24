@@ -121,6 +121,7 @@ body
   margin: 0 20px;
   font-size: 17px;
 }
+
 /* input field features */
 input[type=text], input[type=password] 
 {
@@ -195,7 +196,3 @@ input[type=text], input[type=password]
     margin-left: 8px;
   }
 }
-
-
-
-
