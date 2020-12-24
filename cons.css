@@ -150,5 +150,20 @@ body
 @media only screen and (max-width:500px){
     #logo{
         width: 90%;
+        z-index: 10;
+        top: 30%;
+    }
+    #thanku{
+        width: 100%;
+        position: absolute;
+    top: 20%;
+    
+    }
+
+}
+
+@media only screen and (min-width:900px){
+    #thanku{
+        display: none;
     }
 }
